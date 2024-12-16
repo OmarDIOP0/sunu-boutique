@@ -1,0 +1,58 @@
+<section class="py-3 overflow-hidden">
+  <div class="container mx-auto">
+    <div class="mb-5 flex flex-wrap justify-between">
+      <h2 class="text-2xl font-bold">Newly Arrived Brands</h2>
+      <a href="#" class="btn btn-link">View All Categories →</a>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="carousel-brands flex overflow-x-auto space-x-4 scrollbar-hide">
+      <!-- Première Slide -->
+      <div class="card card-side bg-base-100 shadow-xl rounded-lg min-w-[200px] flex-shrink-0 m-2">
+        <figure class="w-1/6">
+          <img src="assets/images/logo.png" alt="Card title" class="rounded w-full h-full object-cover">
+        </figure>
+        <div class="card-body p-3">
+          <h6 class="text-gray-500 text-sm">Amber Jar</h6>
+          <span class="card-title text-lg">Honey best nectar you wish to get</span>
+        </div>
+      </div>
+
+      <div class="card card-side bg-base-100 shadow-xl rounded-lg min-w-[300px] flex-shrink-0 m-2">
+        <figure class="w-1/6">
+          <img src="assets/images/logo.png" alt="Card title" class="rounded w-full h-full object-cover">
+        </figure>
+        <div class="card-body p-3">
+          <h6 class="text-gray-500 text-sm">Amber Jar</h6>
+          <span class="card-title text-lg">Honey best nectar you wish to get</span>
+        </div>
+      </div>
+
+      <!-- Autres slides identiques -->
+      <div class="card card-side bg-base-100 shadow-xl rounded-lg min-w-[300px] flex-shrink-0 m-2">
+        <figure class="w-1/6">
+          <img src="assets/images/logo.png" alt="Card title" class="rounded w-full h-full object-cover">
+        </figure>
+        <div class="card-body p-3">
+          <h6 class="text-gray-500 text-sm">Amber Jar</h6>
+          <span class="card-title text-lg">Honey best nectar you wish to get</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center mt-4 space-x-4">
+      <button class="btn btn-circle" (click)="scrollCarousel(-1)">
+        ❮
+      </button>
+      <button class="btn btn-circle" (click)="scrollCarousel(1)">
+        ❯
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Fonction pour gérer le défilement du carrousel
+
+</script>
