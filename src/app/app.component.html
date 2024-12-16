@@ -1,336 +1,2120 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+      <path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+      <path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/>
+    </symbol>
+  </defs>
+</svg>
 
-<style>
-  :host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
+<div class="preloader-wrapper">
+  <div class="preloader">
+  </div>
+</div>
 
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
-    --gray-400: oklch(70.9% 0.015 304.04);
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
+  <div class="offcanvas-header justify-content-center">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Your cart</span>
+        <span class="badge bg-primary rounded-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Growers cider</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Fresh grapes</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Heinz tomato ketchup</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
 
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
-      180deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
-
-    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-      90deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
-
-    --pill-accent: var(--bright-blue);
-
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1 {
-    font-size: 3.125rem;
-    color: var(--gray-900);
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -0.125rem;
-    margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-  }
-
-  p {
-    margin: 0;
-    color: var(--gray-700);
-  }
-
-  main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-  }
-
-  .angular-logo {
-    max-width: 9.2rem;
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
-
-  .content h1 {
-    margin-top: 1.75rem;
-  }
-
-  .content p {
-    margin-top: 1.5rem;
-  }
-
-  .divider {
-    width: 1px;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
-    margin-inline: 0.5rem;
-  }
-
-  .pill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-
-  .pill {
-    display: flex;
-    align-items: center;
-    --pill-accent: var(--bright-blue);
-    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-    color: var(--pill-accent);
-    padding-inline: 0.75rem;
-    padding-block: 0.375rem;
-    border-radius: 2.75rem;
-    border: 0;
-    transition: background 0.3s ease;
-    font-family: var(--inter-font);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4rem;
-    letter-spacing: -0.00875rem;
-    text-decoration: none;
-  }
-
-  .pill:hover {
-    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
-  }
-
-  .pill-group .pill:nth-child(6n + 1) {
-    --pill-accent: var(--bright-blue);
-  }
-  .pill-group .pill:nth-child(6n + 2) {
-    --pill-accent: var(--french-violet);
-  }
-  .pill-group .pill:nth-child(6n + 3),
-  .pill-group .pill:nth-child(6n + 4),
-  .pill-group .pill:nth-child(6n + 5) {
-    --pill-accent: var(--hot-red);
-  }
-
-  .pill-group svg {
-    margin-inline-start: 0.25rem;
-  }
-
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
-  }
-
-  .social-links path {
-    transition: fill 0.3s ease;
-    fill: var(--gray-400);
-  }
-
-  .social-links a:hover svg path {
-    fill: var(--gray-900);
-  }
-
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
-
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
-      margin-block: 1.5rem;
-    }
-  }
-</style>
-
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 982 239"
-        fill="none"
-        class="angular-logo"
-      >
-        <g clip-path="url(#a)">
-          <path
-            fill="url(#b)"
-            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
-          />
-          <path
-            fill="url(#c)"
-            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
-          />
-        </g>
-        <defs>
-          <radialGradient
-            id="c"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientTransform="rotate(118.122 171.182 60.81) scale(205.794)"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#FF41F8" />
-            <stop offset=".707" stop-color="#FF41F8" stop-opacity=".5" />
-            <stop offset="1" stop-color="#FF41F8" stop-opacity="0" />
-          </radialGradient>
-          <linearGradient
-            id="b"
-            x1="0"
-            x2="982"
-            y1="192"
-            y2="192"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#F0060B" />
-            <stop offset="0" stop-color="#F0070C" />
-            <stop offset=".526" stop-color="#CC26D5" />
-            <stop offset="1" stop-color="#7702FF" />
-          </linearGradient>
-          <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
-        </defs>
-      </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
     </div>
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
-      <div class="pill-group">
-        @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
-          <a
-            class="pill"
-            [href]="item.link"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>{{ item.title }}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="14"
-              viewBox="0 -960 960 960"
-              width="14"
-              fill="currentColor"
-            >
-              <path
-                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-              />
-            </svg>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch">
+  <div class="offcanvas-header justify-content-center">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Search</span>
+      </h4>
+      <form role="search" action="#" method="get" class="d-flex mt-3 gap-0">
+        <input class="form-control rounded-start rounded-0 bg-light" type="email" placeholder="What are you looking for?" aria-label="What are you looking for?">
+        <button class="btn btn-dark rounded-end rounded-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container-fluid">
+    <div class="row py-3 border-bottom">
+
+      <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+        <div class="main-logo">
+          <a href="#">
+            <img src="/assets/images/logo.png" alt="logo" class="img-fluid" width="50px">
           </a>
-        }
+        </div>
       </div>
-      <div class="social-links">
-        <a
-          href="https://github.com/angular/angular"
-          aria-label="Github"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="25"
-            height="24"
-            viewBox="0 0 25 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="Github"
-          >
-            <path
-              d="M12.3047 0C5.50634 0 0 5.50942 0 12.3047C0 17.7423 3.52529 22.3535 8.41332 23.9787C9.02856 24.0946 9.25414 23.7142 9.25414 23.3871C9.25414 23.0949 9.24389 22.3207 9.23876 21.2953C5.81601 22.0377 5.09414 19.6444 5.09414 19.6444C4.53427 18.2243 3.72524 17.8449 3.72524 17.8449C2.61064 17.082 3.81137 17.0973 3.81137 17.0973C5.04697 17.1835 5.69604 18.3647 5.69604 18.3647C6.79321 20.2463 8.57636 19.7029 9.27978 19.3881C9.39052 18.5924 9.70736 18.0499 10.0591 17.7423C7.32641 17.4347 4.45429 16.3765 4.45429 11.6618C4.45429 10.3185 4.9311 9.22133 5.72065 8.36C5.58222 8.04931 5.16694 6.79833 5.82831 5.10337C5.82831 5.10337 6.85883 4.77319 9.2121 6.36459C10.1965 6.09082 11.2424 5.95546 12.2883 5.94931C13.3342 5.95546 14.3801 6.09082 15.3644 6.36459C17.7023 4.77319 18.7328 5.10337 18.7328 5.10337C19.3942 6.79833 18.9789 8.04931 18.8559 8.36C19.6403 9.22133 20.1171 10.3185 20.1171 11.6618C20.1171 16.3888 17.2409 17.4296 14.5031 17.7321C14.9338 18.1012 15.3337 18.8559 15.3337 20.0084C15.3337 21.6552 15.3183 22.978 15.3183 23.3779C15.3183 23.7009 15.5336 24.0854 16.1642 23.9623C21.0871 22.3484 24.6094 17.7341 24.6094 12.3047C24.6094 5.50942 19.0999 0 12.3047 0Z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://twitter.com/angular"
-          aria-label="Twitter"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="Twitter"
-          >
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw"
-          aria-label="Youtube"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="29"
-            height="20"
-            viewBox="0 0 29 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="Youtube"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M27.4896 1.52422C27.9301 1.96749 28.2463 2.51866 28.4068 3.12258C29.0004 5.35161 29.0004 10 29.0004 10C29.0004 10 29.0004 14.6484 28.4068 16.8774C28.2463 17.4813 27.9301 18.0325 27.4896 18.4758C27.0492 18.9191 26.5 19.2389 25.8972 19.4032C23.6778 20 14.8068 20 14.8068 20C14.8068 20 5.93586 20 3.71651 19.4032C3.11363 19.2389 2.56449 18.9191 2.12405 18.4758C1.68361 18.0325 1.36732 17.4813 1.20683 16.8774C0.613281 14.6484 0.613281 10 0.613281 10C0.613281 10 0.613281 5.35161 1.20683 3.12258C1.36732 2.51866 1.68361 1.96749 2.12405 1.52422C2.56449 1.08095 3.11363 0.76113 3.71651 0.596774C5.93586 0 14.8068 0 14.8068 0C14.8068 0 23.6778 0 25.8972 0.596774C26.5 0.76113 27.0492 1.08095 27.4896 1.52422ZM19.3229 10L11.9036 5.77905V14.221L19.3229 10Z"
-            />
-          </svg>
-        </a>
+
+      <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+        <div class="search-bar row bg-light p-2 my-2 rounded-4">
+          <div class="col-md-4 d-none d-md-block">
+            <select class="form-select border-0 bg-transparent">
+              <option>All Categories</option>
+              <option>Groceries</option>
+              <option>Drinks</option>
+              <option>Chocolates</option>
+            </select>
+          </div>
+          <div class="col-11 col-md-7">
+            <form id="search-form" class="text-center" action="#" method="post">
+              <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products">
+            </form>
+          </div>
+          <div class="col-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+        <div class="support-box text-end d-none d-xl-block">
+          <span class="fs-6 text-muted">For Support?</span>
+          <h5 class="mb-0">+76291</h5>
+        </div>
+
+        <ul class="d-flex justify-content-end list-unstyled m-0">
+          <li>
+            <a href="#" class="rounded-circle bg-light p-2 mx-1">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="rounded-circle bg-light p-2 mx-1">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
+            </a>
+          </li>
+          <li class="d-lg-none">
+            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+            </a>
+          </li>
+          <li class="d-lg-none">
+            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="cart text-end d-none d-lg-block dropdown">
+          <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+            <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+            <span class="cart-total fs-5 fw-bold">$1290.00</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row py-3">
+      <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
+        <nav class="main-menu d-flex navbar navbar-expand-lg">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+
+            <div class="offcanvas-header justify-content-center">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+              <select class="filter-categories border-0 mb-0 me-5">
+                <option>Shop by Departments</option>
+                <option>Groceries</option>
+                <option>Drinks</option>
+                <option>Chocolates</option>
+              </select>
+
+              <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                <li class="nav-item active">
+                  <a href="#women" class="nav-link">Women</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#men" class="nav-link">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#kids" class="nav-link">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#accessories" class="nav-link">Accessories</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu" aria-labelledby="pages">
+                    <li><a href="#" class="dropdown-item">About Us <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Shop <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Single Product <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Cart <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Checkout <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Blog <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Single Post <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Styles <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Contact <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">Thank You <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">My Account <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                    <li><a href="#" class="dropdown-item">404 Error <span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#brand" class="nav-link">Brand</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#sale" class="nav-link">Sale</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link">Blog</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </nav>
+        <div class="d-none d-lg-block">
+          <a href="https://therichpost.com" target="_blank" class="nav-link btn-coupon-code">
+            <img src="/assets/images/logo.png" alt="gift icon" width="20px">
+            <strong class="ms-2 text-dark">Get PRO Version</strong>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</main>
+</header>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Main Section Menu -->
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="">
+          <div class="row">
+            <div class="col-md-7 bg-primary-subtle rounded-3">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row p-5">
+                      <div class="col-md-7">
+                        <div class=" my-3">100% natural</div>
+                        <h3 class="">Fresh Smoothie & Summer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+                      </div>
+                      <div class="img-wrapper col-md-5">
+                        <img src="/assets/images/logo.png" alt="Product Thumbnail" class="img-fluid" style="max-height: 250px; object-fit: contain;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Deuxième Slide -->
+                  <div class="carousel-item">
+                    <div class="row p-5">
+                      <div class="col-md-7">
+                        <div class="mb-3 pb-3">100% natural</div>
+                        <h3 class="">Fresh Smoothie & Summer Juice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                      </div>
+                      <div class="img-wrapper col-md-5">
+                        <img src="/assets/images/logo.png" alt="Product Thumbnail" class="img-fluid" style="max-height: 250px; object-fit: contain;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Troisième Slide -->
+                  <div class="carousel-item">
+                    <div class="row p-5">
+                      <div class="col-md-7">
+                        <div class="mb-3 pb-3">100% natural</div>
+                        <h3 class="">Heinz Tomato Ketchup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                      </div>
+                      <div class="img-wrapper col-md-5">
+                        <img src="/assets/images/logo.png" alt="Product Thumbnail" class="img-fluid" style="max-height: 250px; object-fit: contain;">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Contrôles du Carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Autres Bannières (Deux blocs à droite du carousel) -->
+            <div class="col-md-5 d-flex flex-column justify-content-between">
+              <div class="bg-success-subtle mb-3 rounded-3" style="background:url('/assets/images/logo.png') no-repeat;background-position: right bottom; height: 220px;">
+                <div class="row p-5">
+                  <div class="content-wrapper col-md-7">
+                    <div class="sale mb-3 pb-3">20% off</div>
+                    <h6 class="">Fruits & Vegetables</h6>
+                    <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deuxième bloc en bas -->
+              <div class="bg-danger-subtle rounded-3" style="background:url('/assets/images/logo.png') no-repeat;background-position: right bottom; height: 220px;">
+                <div class="row p-5">
+                  <div class="col-md-7">
+                    <div class="mb-3 pb-3">15% off</div>
+                    <h6 class="item-title">Baked Products</h6>
+                    <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<router-outlet />
+<!-- Section 2: BestSelling Products -->
+<section class="py-3 overflow-hidden">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+          <h2 class="section-title">Category</h2>
+          <div class="d-flex align-items-center">
+            <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Première Slide -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-between">
+
+                <!-- Category Item -->
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Breads & Sweets</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Beverages</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Meat Products</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Deuxième Slide -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Meat Products</h3>
+                  </div>
+                </a>
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Breads</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Popular Brands -->
+<section class="py-3 overflow-hidden">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+          <h2 class="section-title">Newly Arrived Brands</h2>
+          <div class="d-flex align-items-center">
+            <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inners">
+
+            <!-- Première Slide -->
+            <div class="carousel-items active card-best-saller">
+              <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="assets/images/logo.png" class="img-fluid rounded category-img" alt="Card title">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body py-0">
+                      <h6 class="text-muted mb-0">Amber Jar</h6>
+                      <span class="card-title">Honey best nectar you wish to get</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-items card-best-saller">
+              <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="assets/images/logo.png" class="img-fluid rounded category-img" alt="Card title">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body py-0">
+                      <h6 class="text-muted mb-0">Amber Jar</h6>
+                      <span class="card-title">Honey best nectar you wish to get</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-items card-best-saller">
+              <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="assets/images/logo.png" class="img-fluid rounded category-img" alt="Card title">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body py-0">
+                      <h6 class="text-muted mb-0">Amber Jar</h6>
+                      <span class="card-title">Honey best nectar you wish to get</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-items card-best-saller">
+              <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="assets/images/logo.png" class="img-fluid rounded category-img" alt="Card title">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body py-0">
+                      <h6 class="text-muted mb-0">Amber Jar</h6>
+                      <span class="card-title">Honey best nectar you wish to get</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Vente Products -->
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bootstrap-tabs product-tabs">
+          <div class="tabs-header d-flex justify-content-between border-bottom my-5">
+            <h3>Trending Products</h3>
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a href="#" class="nav-link text-uppercase fs-6 active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all">All</a>
+                <a href="#" class="nav-link text-uppercase fs-6" id="nav-fruits-tab" data-bs-toggle="tab" data-bs-target="#nav-fruits">Fruits & Veges</a>
+                <a href="#" class="nav-link text-uppercase fs-6" id="nav-juices-tab" data-bs-toggle="tab" data-bs-target="#nav-juices">Juices</a>
+              </div>
+            </nav>
+          </div>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--Filter 2-->
+            <div class="tab-pane fade" id="nav-fruits" role="tabpanel" aria-labelledby="nav-fruits-tab">
+              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!---Filter 3-->
+            <div class="tab-pane fade" id="nav-juices" role="tabpanel" aria-labelledby="nav-juices-tab">
+              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-3">
+                  <div class="product-item position-relative p-3 border rounded">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">-30%</span>
+                    <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-2">
+                      <svg width="24" height="24"><use xlink:href="#heart"></use></svg>
+                    </a>
+                    <figure class="text-center">
+                      <a href="#" title="Product Title">
+                        <img src="assets/images/logo.png" alt="Product Thumbnail" class="tab-image img-fluid w-50">
+                      </a>
+                    </figure>
+                    <h3 class="text-center fs-6">Sunstar Fresh Melon Juice</h3>
+                    <div class="text-center d-flex">
+                      <span class="qty d-block text-muted">1 Unit</span>
+                      <span class="rating d-block text-primary">
+                        <svg width="30" height="30" class="text-warning"><use xlink:href="#star-solid"></use></svg> 4.5
+                      </span>
+                    </div>
+                    <span class="price d-block fw-bold">18.000 FCFA</span>
+                    <del>25.000 FCFA</del>.
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty w-50">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-sm btn-number" data-type="minus">
+                          <svg width="10" height="10"><use xlink:href="#minus"></use></svg>
+                        </button>
+                        <input type="text" name="quantity" class="form-control input-number quantity" value="0">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-sm btn-number" data-type="plus">
+                          <svg width="12" height="12"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </div>
+                      <button class="btn btn-primary"><svg width="18" height="18"><use xlink:href="#cart"></use></svg>Ajouter</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section 5 Annonce Promo-->
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class=" bg-danger-subtle mb-3" style="background: url('assets/images/logo.png');background-repeat: no-repeat;background-position: right bottom;">
+          <div class=" p-5">
+            <div class="categories text-primary fs-3 fw-bold">Upto 25% Off</div>
+            <h3 class="banner-title">Luxa Dark Chocolate</h3>
+            <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
+            <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class=" bg-info-subtle" style="background: url('assets/images/logo.png');background-repeat: no-repeat;background-position: right bottom;">
+          <div class=" p-5">
+            <div class="categories text-primary fs-3 fw-bold">Upto 25% Off</div>
+            <h3 class="banner-title">Creamy Muffins</h3>
+            <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
+            <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!---Section 6 Meilleure Vente-->
+<section class="py-3 overflow-hidden">
+  <div class="container-fluid bg-white">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header d-flex flex-wrap justify-content-between my-5">
+          <h2 class="section-title">Best Selling Products</h2>
+          <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section New Letter---->
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="bg-secondary-subtle py-5 rounded-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 p-5">
+            <div class="section-header">
+              <h2 class="section-title display-6">Get <span class="text-primary">25% Discount</span> on your first purchase</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
+          </div>
+          <div class="col-md-6 p-5">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text"
+                  class="form-control form-control-lg" name="name" id="name" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="abc@mail.com">
+              </div>
+              <div class="form-check form-check-inline mb-3">
+                <label class="form-check-label" for="subscribe">
+                <input class="form-check-input" type="checkbox" id="subscribe" value="subscribe">
+                Subscribe to the newsletter</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--Most Popular Product-->
+<section class="py-3 overflow-hidden">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header d-flex flex-wrap justify-content-between my-5">
+          <h2 class="section-title">Most popular products</h2>
+            <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+                <div class="product-items card shadow-sm border-0 h-100 m-2" style="width: 200px;">
+                  <span class="badge bg-success position-absolute m-3 top-0 start-0 px-3 py-1 rounded-pill">-15%</span>
+                  <a href="#" class="btn-wishlist position-absolute top-0 end-0 m-3">
+                    <svg width="24" height="24" class="text-muted">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </a>
+                  <figure class="mx-auto text-center">
+                    <a href="#" title="Product Title">
+                      <img src="assets/images/logo.png" alt="Product Thumbnail" class="img-fluid rounded-top w-50">
+                    </a>
+                  </figure>
+                  <div class="card-body d-flex flex-column align-items-center text-center">
+                    <h6 class="product-title mb-1 text-truncate">Sunstar Fresh Melon Juice</h6>
+                    <span class="product-qty text-muted small mb-1">1 Unit</span>
+                    <div class="rating mb-1">
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-warning me-1"><use xlink:href="#star-solid"></use></svg>
+                      <svg width="16" height="16" class="text-secondary"><use xlink:href="#star"></use></svg>
+                      <span class="ms-1 small">(4.5)</span>
+                    </div>
+                    <span class="product-price h4 text-primary mb-3">18.000 FCFA</span>
+                    <a href="#" class="btn btn-primary btn-sm w-100">AJOUTER AU PAPIER</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Just Arrived---->
+<section class="py-3 overflow-hidden">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+          <h2 class="section-title">Arrive Recemment</h2>
+          <div class="d-flex align-items-center">
+            <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Breads & Sweets</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Beverages</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Meat Products</h3>
+                  </div>
+                </a>
+
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Deuxième Slide -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Meat Products</h3>
+                  </div>
+                </a>
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Fruits & Veges</h3>
+                  </div>
+                </a>
+                <a href="#" class="nav-link category-item col-2 d-flex justify-content-center align-items-center">
+                  <div class="category-content text-center">
+                    <img src="assets/images/logo.png" alt="Category Thumbnail" class="category-img">
+                    <h3 class="category-title">Breads</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Bloc-->
+<section id="latest-blog" class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="section-header d-flex align-items-center justify-content-between my-5">
+        <h2 class="section-title">Our Recent Blog</h2>
+        <div class="btn-wrap align-right">
+          <a href="#" class="d-flex align-items-center nav-link">Read All Articles <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <a href="#">
+              <img src="assets/images/logo.png" alt="post" class="card-img-top w-50" >
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date"><svg width="16" height="16"><use xlink:href="#calendar"></use></svg>22 Aug 2021</div>
+              <div class="meta-categories"><svg width="16" height="16"><use xlink:href="#category"></use></svg>tips & tricks</div>
+            </div>
+            <div class="post-header">
+              <h6 class="post-title">
+                <a href="#" class="text-decoration-none">Top 10 casual look ideas to dress up your kids</a>
+              </h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <a href="#">
+              <img src="assets/images/logo.png" alt="post" class="card-img-top w-50">
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date"><svg width="16" height="16"><use xlink:href="#calendar"></use></svg>25 Aug 2021</div>
+              <div class="meta-categories"><svg width="16" height="16"><use xlink:href="#category"></use></svg>trending</div>
+            </div>
+            <div class="post-header">
+              <h6 class="post-title">
+                <a href="#" class="text-decoration-none">Latest trends of wearing street wears supremely</a>
+              </h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <a href="#">
+              <img src="assets/images/logo.png" alt="post" class="card-img-top w-50">
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date"><svg width="16" height="16"><use xlink:href="#calendar"></use></svg>28 Aug 2021</div>
+              <div class="meta-categories"><svg width="16" height="16"><use xlink:href="#category"></use></svg>inspiration</div>
+            </div>
+            <div class="post-header">
+              <h6 class="post-title">
+                <a href="#" class="text-decoration-none">10 Different Types of comfortable clothes ideas for women</a>
+              </h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---Peaople Looking-->
+<section class="py-3">
+  <div class="container-fluid">
+    <h2 class="my-5">People are also looking for</h2>
+    <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
+    <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
+  </div>
+</section>
+<!--App Service-->
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
+      <div class="col">
+        <div class="card mb-3 border-0">
+          <div class="row">
+            <div class="col-md-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 15a3 3 0 0 0-1.9-2.78l1.87-7a1 1 0 0 0-.18-.87A1 1 0 0 0 20.5 4H6.8l-.33-1.26A1 1 0 0 0 5.5 2h-2v2h1.23l2.48 9.26a1 1 0 0 0 1 .74H18.5a1 1 0 0 1 0 2h-13a1 1 0 0 0 0 2h1.18a3 3 0 1 0 5.64 0h2.36a3 3 0 1 0 5.82 1a2.94 2.94 0 0 0-.4-1.47A3 3 0 0 0 21.5 15Zm-3.91-3H9L7.34 6H19.2ZM9.5 20a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></svg>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body p-0">
+                <h5>Free delivery</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border-0">
+          <div class="row">
+            <div class="col-md-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78ZM18 11.88a7 7 0 0 1-2.93 5.7L12 19.77l-3.07-2.19A7 7 0 0 1 6 11.88v-6.3a10 10 0 0 0 6-1.39a10 10 0 0 0 6 1.39Zm-4.46-2.29l-2.69 2.7l-.89-.9a1 1 0 0 0-1.42 1.42l1.6 1.6a1 1 0 0 0 1.42 0L15 11a1 1 0 0 0-1.42-1.42Z"/></svg>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body p-0">
+                <h5>100% secure payment</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border-0">
+          <div class="row">
+            <div class="col-md-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Zm-7 2h2v3a1 1 0 0 1-2 0Zm-4 0h2v3a1 1 0 0 1-2 0ZM7 7h2v3a1 1 0 0 1-2 0Zm-3 4a1 1 0 0 1-1-1V7h2v3a1 1 0 0 1-1 1Zm10 10h-4v-2a2 2 0 0 1 4 0Zm5 0h-3v-2a4 4 0 0 0-8 0v2H5v-8.18a3.17 3.17 0 0 0 1-.6a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3.17 3.17 0 0 0 1 .6Zm2-11a1 1 0 0 1-2 0V7h2ZM4.3 3H20a1 1 0 0 0 0-2H4.3a1 1 0 0 0 0 2Z"/></svg>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body p-0">
+                <h5>Quality guarantee</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border-0">
+          <div class="row">
+            <div class="col-md-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 8.35a3.07 3.07 0 0 0-3.54.53a3 3 0 0 0 0 4.24L11.29 16a1 1 0 0 0 1.42 0l2.83-2.83a3 3 0 0 0 0-4.24A3.07 3.07 0 0 0 12 8.35Zm2.12 3.36L12 13.83l-2.12-2.12a1 1 0 0 1 0-1.42a1 1 0 0 1 1.41 0a1 1 0 0 0 1.42 0a1 1 0 0 1 1.41 0a1 1 0 0 1 0 1.42ZM12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 2.26 6.33l-2 2a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20Zm0 18H5.41l.93-.93a1 1 0 0 0 0-1.41A8 8 0 1 1 12 20Z"/></svg>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body p-0">
+                <h5>guaranteed savings</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border-0">
+          <div class="row">
+            <div class="col-md-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M18 7h-.35A3.45 3.45 0 0 0 18 5.5a3.49 3.49 0 0 0-6-2.44A3.49 3.49 0 0 0 6 5.5A3.45 3.45 0 0 0 6.35 7H6a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h1v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6h1a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3Zm-7 13H8a1 1 0 0 1-1-1v-6h4Zm0-9H5v-1a1 1 0 0 1 1-1h5Zm0-4H9.5A1.5 1.5 0 1 1 11 5.5Zm2-1.5A1.5 1.5 0 1 1 14.5 7H13ZM17 19a1 1 0 0 1-1 1h-3v-7h4Zm2-8h-6V9h5a1 1 0 0 1 1 1Z"/></svg>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body p-0">
+                <h5>Daily offers</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
