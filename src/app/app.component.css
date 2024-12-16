@@ -1,4 +1,4 @@
-body{
+/* body{
    margin:0;
    padding:0;
    box-sizing: border-box;
@@ -99,14 +99,13 @@ body{
 }
 
 
-/* Responsivité pour plus de petites tailles d'écran */
 @media (max-width: 768px) {
   .category-items {
     margin-bottom: 20px;
   }
 }
 
-/* BEST SELLER*/
+/* BEST SELLER
 .product-items {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
@@ -151,4 +150,4 @@ body{
   font-weight: 500;
 }
 
-
+ */
