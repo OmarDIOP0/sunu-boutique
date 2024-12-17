@@ -1,0 +1,82 @@
+/* Assurez-vous que les images sont correctement dimensionnées et espacées */
+.carousel-trending {
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-trending > div {
+  scroll-snap-align: start;
+}
+
+.card {
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Style pour les boutons de défilement */
+.btn-scroll {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ccc;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-scroll:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: #888;
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-circle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-scroll:focus {
+  outline: none;
+}
+
+.carousel-trending {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-trending > div {
+  scroll-snap-align: start;
+}
+
+
+/* Réduire l'espace entre les produits lorsque la fenêtre est petite */
+@media (max-width: 768px) {
+  .carousel-trending {
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: 100%;
+    margin-right: 10px;
+  }
+}

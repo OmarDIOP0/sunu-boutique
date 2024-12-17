@@ -1,0 +1,84 @@
+<section class="py-8 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <!-- En-tête avec titres et filtres -->
+    <div class="flex justify-between items-center border-b pb-4 mb-6">
+      <h3 class="text-2xl font-bold text-gray-800">Trending Products</h3>
+      <nav class="tabs tabs-boxed">
+        <button
+          class="tab"
+          [ngClass]="{ 'tab-active': activeTab === 'all' }"
+          (click)="setActiveTab('all')"
+        >
+          All
+        </button>
+        <button
+          class="tab"
+          [ngClass]="{ 'tab-active': activeTab === 'fruits' }"
+          (click)="setActiveTab('fruits')"
+        >
+          Fruits & Veges
+        </button>
+        <button
+          class="tab"
+          [ngClass]="{ 'tab-active': activeTab === 'juices' }"
+          (click)="setActiveTab('juices')"
+        >
+          Juices
+        </button>
+      </nav>
+    </div>
+    <div class="relative">
+      <button class="btn btn-circle absolute left-0 top-1/2 transform -translate-y-1/2 z-10" (click)="scrollCarousel(-1)">
+        ❮
+      </button>
+    <!-- Affichage des produits en fonction de l'onglet actif -->
+    <div *ngIf="activeTab === 'all'" class="carousel-trending flex overflow-x-auto space-x-6 scrollbar-hide">
+      <div *ngFor="let product of products" class="card bg-white shadow-lg rounded-lg p-4 relative w-80">
+        <span class="badge badge-success absolute top-4 left-4">{{ product.discount }}</span>
+        <button class="absolute top-4 right-4 text-gray-600 hover:text-red-500">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A5 5 0 0117.88 6.197m0 0A5 5 0 016.197 17.88M17.88 6.197L6.197 17.88"></path>
+          </svg>
+        </button>
+        <figure class="text-center mb-4">
+          <img [src]="product.image" alt="Product Thumbnail" class="h-40 mx-auto object-contain">
+        </figure>
+        <h4 class="text-sm font-semibold text-center text-gray-800">{{ product.name }}</h4>
+        <div class="flex justify-between items-center mt-2 text-sm">
+          <span class="text-gray-500">{{ product.unit }}</span>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927C9.45 1.802 10.55 1.802 10.951 2.927l1.528 3.985 4.335.622c1.157.166 1.629 1.548.788 2.337l-3.14 3.058.74 4.3c.198 1.157-.995 2.036-1.991 1.491L10 15.347l-3.861 2.025c-.996.545-2.189-.334-1.991-1.491l.74-4.3-3.14-3.058c-.841-.789-.37-2.17.788-2.337l4.335-.622L9.049 2.927z"></path>
+            </svg>
+            <span class="ml-1 text-gray-700">{{ product.rating }}</span>
+          </div>
+        </div>
+        <div class="mt-3 flex">
+          <span class="text-md font-bold text-gray-900">{{ product.price }} FCFA</span>
+          <del class="text-sm text-gray-500 ml-1">{{ product.oldPrice }} FCFA</del>
+        </div>
+        <div class="flex justify-between items-center mt-4">
+          <div class="flex items-center border rounded">
+            <button class="btn btn-sm btn-danger px-2" (click)="decreaseQuantity(product)">-</button>
+            <input type="number" [value]="product.quantity" class="w-12 text-center border-l border-r outline-none" readonly />
+            <button class="btn btn-sm btn-success px-2" (click)="increaseQuantity(product)">+</button>
+          </div>
+          <button class="btn btn-primary btn-sm" (click)="addToCart(product)">Add</button>
+        </div>
+
+      </div>
+    </div>
+    <button class="btn btn-circle absolute right-0 top-1/2 transform -translate-y-1/2 z-10" (click)="scrollCarousel(1)">
+      ❯
+    </button>
+  </div>
+
+    <!-- Contenus pour d'autres onglets -->
+    <div *ngIf="activeTab === 'fruits'">
+      <p class="text-center text-gray-500">Fruits & Veges content here...</p>
+    </div>
+    <div *ngIf="activeTab === 'juices'">
+      <p class="text-center text-gray-500">Juices content here...</p>
+    </div>
+  </div>
+</section>
