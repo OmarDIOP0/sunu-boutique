@@ -6,10 +6,13 @@ import { CategoryComponent } from './shared/layouts/category/category.component'
 import { PromoComponent } from './shared/layouts/promo/promo.component';
 import { NewBrandsComponent } from './shared/layouts/new-brands/new-brands.component';
 import { TrendingProductComponent } from './shared/layouts/trending-product/trending-product.component';
+import { AnnoncePromoComponent } from "./shared/layouts/annonce-promo/annonce-promo.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FooterComponent,HeaderComponent,CategoryComponent,PromoComponent,NewBrandsComponent,TrendingProductComponent],
+  imports: [RouterOutlet, FooterComponent, HeaderComponent,
+           CategoryComponent, PromoComponent, NewBrandsComponent,
+           TrendingProductComponent, AnnoncePromoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

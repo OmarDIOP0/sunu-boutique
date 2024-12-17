@@ -4,7 +4,7 @@
 
   @Component({
     selector: 'app-trending-product',
-    imports: [RouterModule,RouterOutlet,CommonModule],
+    imports: [RouterModule,CommonModule],
     templateUrl: './trending-product.component.html',
     styleUrl: './trending-product.component.css'
   })
