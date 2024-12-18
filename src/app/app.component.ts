@@ -13,6 +13,7 @@ import { PopularProductsComponent } from "./shared/layouts/popular-products/popu
 import { RecentlyArrivedComponent } from "./shared/layouts/recently-arrived/recently-arrived.component";
 import { BlogComponent } from './shared/layouts/blog/blog.component';
 import { PeopleLookingComponent } from './shared/layouts/people-looking/people-looking.component';
+import { ApplicationServiceComponent } from './shared/layouts/application-service/application-service.component';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,7 @@ import { PeopleLookingComponent } from './shared/layouts/people-looking/people-l
     CategoryComponent, PromoComponent, NewBrandsComponent,
     TrendingProductComponent, AnnoncePromoComponent, BestSellingProductComponent,
     NewLetterComponent, PopularProductsComponent, PopularProductsComponent, RecentlyArrivedComponent,
-    BlogComponent, PeopleLookingComponent],
+    BlogComponent, PeopleLookingComponent,ApplicationServiceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
