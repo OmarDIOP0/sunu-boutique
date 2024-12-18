@@ -10,13 +10,15 @@ import { AnnoncePromoComponent } from "./shared/layouts/annonce-promo/annonce-pr
 import { BestSellingProductComponent } from './shared/layouts/best-selling-product/best-selling-product.component';
 import { NewLetterComponent } from './shared/layouts/new-letter/new-letter.component';
 import { PopularProductsComponent } from "./shared/layouts/popular-products/popular-products.component";
+import { RecentlyArrivedComponent } from "./shared/layouts/recently-arrived/recently-arrived.component";
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, FooterComponent, HeaderComponent,
     CategoryComponent, PromoComponent, NewBrandsComponent,
     TrendingProductComponent, AnnoncePromoComponent, BestSellingProductComponent,
-    NewLetterComponent, PopularProductsComponent,PopularProductsComponent],
+    NewLetterComponent, PopularProductsComponent, PopularProductsComponent, RecentlyArrivedComponent
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
