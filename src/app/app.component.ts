@@ -8,12 +8,14 @@ import { NewBrandsComponent } from './shared/layouts/new-brands/new-brands.compo
 import { TrendingProductComponent } from './shared/layouts/trending-product/trending-product.component';
 import { AnnoncePromoComponent } from "./shared/layouts/annonce-promo/annonce-promo.component";
 import { BestSellingProductComponent } from './shared/layouts/best-selling-product/best-selling-product.component';
+import { NewLetterComponent } from './shared/layouts/new-letter/new-letter.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, FooterComponent, HeaderComponent,
            CategoryComponent, PromoComponent, NewBrandsComponent,
-           TrendingProductComponent, AnnoncePromoComponent,BestSellingProductComponent],
+           TrendingProductComponent, AnnoncePromoComponent,BestSellingProductComponent,
+            NewLetterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
